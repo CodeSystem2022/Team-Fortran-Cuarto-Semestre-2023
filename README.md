@@ -12,7 +12,7 @@
 
 ---
 
-### :page_with_curl: Frameworks
+### :page_with_curl: Tecnologias
 
 - :fire: Html
 - :fire: css
@@ -30,8 +30,6 @@
 - :star2: [Pereyra Facundo Ezequiel](https://github.com/facundoPereyra07) 
 - :star2: [Vizcaino Lucas Ezequiel](https://avatars.githubusercontent.com/u/112833803?s=64&v=4)
 - :star2: [Vizcaino Gisela Carina](https://avatars.githubusercontent.com/u/111472242?s=64&v=4)
-
---- 
 
 # Repositorio del Grupo Fortran - Último Semestre
 
@@ -57,10 +55,28 @@ Te invitamos a explorar las distintas secciones de este repositorio para conocer
 
 ![Grupo Fortran Logo](logo.png)
 
+---
+
+Si sos Scrum Master:
+
+- Crear Proyecto.
+- Crear issues con sus etiquetas y su milestone corresponeidnte.
+- Asignar/reasignar las tareas a realizar.
+- Verificar las PR.
+- Corregir los posibles conflictos que se generen.
+- Cerrar issues y proyecto.
+- Crear release al finalizar.
+- Generar Wiki del proyecto.
+
+Para los demas integrantes:
+
+- Situarse en su rama, realizar la tarea asignada.
+- Verificar que el codigo por entregar funcione.
+- Enviar los cambios, generando una PR desde su rama a main.
 
 | Nombre | Semana de Scrum Master(Projecto) | Proyecto(Wiki) | Lenguaje de programación | Observación |
 |:---:|:---:|:---:|:---:|:---:|
-|     |     |     |     |     |
+|   -  |  Semana 1   |  Sistema Estudiantes   |  Java   |   -   |
 |     |     |     |     |     |
 |     |     |     |     |     |
 |     |     |     |     |     |
