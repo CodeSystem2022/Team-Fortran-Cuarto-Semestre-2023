@@ -78,3 +78,4 @@ Para los demas integrantes:
 |:---:|:---:|:---:|:---:|:---:|
 | Matias Peña | Semana 1 | Sistema Estudiantes | Java |   -   |
 | Lucas Vizcaino | Semana 2 | Sistemas Numéricos |     |       |
+|    |    |    |    |    |
