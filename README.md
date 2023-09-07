@@ -81,4 +81,5 @@ Para los demas integrantes:
 | Lucas Vizcaino | 2da semana | Sistemas Numericos | Python |  -  |
 |   -  |  -  | Sistema Estudiantes Spring Boot | Java |   -  |
 |   -  |  -  | Sistema Estudiantes Spring Boot | Java |   -  |
+|   -  |  -  | Ecommer | JavaScript |   -  |
 
