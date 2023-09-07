@@ -77,4 +77,4 @@ Para los demas integrantes:
 | Nombre | Semana de Scrum Master(Projecto) | Proyecto(Wiki) |  Observación |
 |:---:|:---:|:---:|:---:|:---:|
 | Matias Peña | Semana 1 | Sistema Estudiantes | Java |   -   |
-| Lucas Vizcaino | Semana 2 | Sistemas Numéricos|     |       |
+| Lucas Vizcaino | Semana 2 | Sistemas Numéricos |     |       |
