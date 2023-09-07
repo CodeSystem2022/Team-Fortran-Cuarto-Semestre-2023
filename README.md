@@ -1,4 +1,4 @@
-<div id="header" align="center">
+![image](https://github.com/CodeSystem2022/Team-Fortran-Cuarto-Semestre-2023/assets/112833803/8e3e1f57-674e-44ea-bcb8-462742c2f63e)<div id="header" align="center">
     <h1 align="center">
         Team Fortran
     </h1>
@@ -74,10 +74,10 @@ Para los demas integrantes:
 - Verificar que el codigo por entregar funcione.
 - Enviar los cambios, generando una PR desde su rama a main.
 
-| Nombre | Semana de Scrum Master(Projecto) | Proyecto(Wiki) | Lenguaje de programación | Observación |
+| Nombre | Semana de Scrum Master(Projecto) | Proyecto(Wiki) |  Observación |
 |:---:|:---:|:---:|:---:|:---:|
 | Matias Peña | Semana 1 | Sistema Estudiantes | Java |   -   |
-| Lucas Vizcaino | Semana 2 | Sistemas Numéricos |Python|     |
-|     |     |     |     |     |
-|     |     |     |     |     |
-|     |     |     |     |     |
+| Lucas Vizcaino | Semana 2 | Sistemas Numéricos|     |
+|     |     |         | Sistema Estudiantes Spring Boot |
+|     |     |         |     |
+|     |     |         |     |
