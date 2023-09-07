@@ -74,8 +74,11 @@ Para los demas integrantes:
 - Verificar que el codigo por entregar funcione.
 - Enviar los cambios, generando una PR desde su rama a main.
 
-| Nombre | Semana de Scrum Master(Projecto) | Proyecto(Wiki) |  Observación |
+
+| Nombre | Semana de Scrum Master(Projecto) | Proyecto(Wiki) | Lenguaje de programación | Observación |
 |:---:|:---:|:---:|:---:|:---:|
-| Matias Peña | Semana 1 | Sistema Estudiantes | Java |   -   |
-| Lucas Vizcaino | Semana 2 | Sistemas Numéricos |     |       |
-|    |    |    |    |    |
+| Matias Peña | Semana 1 | Sistema Estudiantes | Java | - |
+| Lucas Vizcaino | 2da semana | Sistemas Numericos | Python |  -  |
+|   -  |  -  | Sistema Estudiantes Spring Boot | Java |   -  |
+| [Vizcaino Lucas Ezequiel](https://avatars.githubusercontent.com/u/112833803?s=64&v=4) |  [4ta semana](https://github.com/orgs/CodeSystem2022/projects/151)  | [Objetos](https://github.com/CodeSystem2022/Team-Fortran-2023/wiki/Objetos) | JavaScript |  |
+| [Morales Castro Danisa](https://github.com/danisa-morales) |  [5ta semana](https://github.com/orgs/CodeSystem2022/projects/282)  | [Sobreescritura](https://github.com/CodeSystem2022/Team-Fortran-2023/wiki/Sobreescritura) | Java | 
