@@ -80,6 +80,5 @@ Para los demas integrantes:
 | Matias Peña | Semana 1 | Sistema Estudiantes | Java | - |
 | Lucas Vizcaino | 2da semana | Sistemas Numericos | Python |  -  |
 |   -  |  -  | Sistema Estudiantes Spring Boot | Java |   -  |
-|   -  |  -  | Sistema Estudiantes Spring Boot | Java |   -  |
 |   -  |  -  | Ecommer | JavaScript |   -  |
 
