@@ -50,6 +50,7 @@ Te invitamos a explorar las distintas secciones de este repositorio para conocer
 
 
 ![Grupo Fortran Logo](logo.png)
+![Uploading image.png…]()
 
 ---
 
@@ -74,7 +75,8 @@ Para los demas integrantes:
 | Nombre | Semana de Scrum Master(Projecto) | Proyecto(Wiki) | Lenguaje de programación | Observación |
 |:---:|:---:|:---:|:---:|:---:|
 | Matias Peña | Semana 1 | Sistema Estudiantes | Java | - |
-| Lucas Vizcaino | 2da semana | Sistemas Numericos | Python |  -  |
-|   -  |  -  | Sistema Estudiantes Spring Boot | Java |   -  |
-|   -  |  -  | Ecommer | JavaScript |   -  |
+| Lucas Vizcaino | 2da semana |  |  -  |
+|   Gisela Vizcaino  |  3ra semana  |  |  |   -  |
+|   -  |  -  |  |  |   -  |
+|   -  |  -  |  |  |   -  |
 
