@@ -1,8 +1,4 @@
-![image](https://github.com/CodeSystem2022/Team-Fortran-Cuarto-Semestre-2023/assets/112833803/8e3e1f57-674e-44ea-bcb8-462742c2f63e)<div id="header" align="center">
-    <h1 align="center">
-        Team Fortran
-    </h1>
-</div>
+
 
 ### :page_with_curl: Lenguaje de programación
 
