@@ -74,9 +74,11 @@ Para los demas integrantes:
 
 | Nombre | Semana de Scrum Master(Projecto) | Proyecto(Wiki) | Lenguaje de programación | Observación |
 |:---:|:---:|:---:|:---:|:---:|
-| Matias Peña | Semana 1 | Sistema Estudiantes | Java | - |
-| Lucas Vizcaino | 2da semana |  |  -  |
-|   Gisela Vizcaino  |  3ra semana  |  |  |   -  |
+| Matias Peña | 1ra semana | Sistema Estudiantes | Java | - |
+| Lucas Vizcaino | 2da semana |  | Python |  -  |
+|   Gisela Vizcaino  |  3ra semana  |  | Python-Java-JavaScript-Node |   -  |
 |   Paola Ruiz |  4ta semana |  |  |   -  |
 |   -  |  -  |  |  |   -  |
+| [Morales Castro Danisa](https://github.com/danisa-morales) | 6ta semana |  |  |  |
+
 
