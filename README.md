@@ -77,6 +77,6 @@ Para los demas integrantes:
 | Matias Peña | Semana 1 | Sistema Estudiantes | Java | - |
 | Lucas Vizcaino | 2da semana |  |  -  |
 |   Gisela Vizcaino  |  3ra semana  |  |  |   -  |
-|   -  |  -  |  |  |   -  |
+|   Paola Ruiz |  4ta semana |  |  |   -  |
 |   -  |  -  |  |  |   -  |
 
