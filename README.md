@@ -74,6 +74,7 @@ Para los demas integrantes:
 
 | Nombre | Semana de Scrum Master(Projecto) | Proyecto(Wiki) | Lenguaje de programación | Observación |
 |:---:|:---:|:---:|:---:|:---:|
+<<<<<<< HEAD
 | [Peña Matías Nicolas](https://avatars.githubusercontent.com/u/112669826?s=64&v=4) | 1ª semana | Sistema Estudiantes | Java | - |
 | [Vizcaino Lucas Ezequiel](https://avatars.githubusercontent.com/u/112833803?s=64&v=4) | 2ª semana |  | Python |  -  |
 | [Vizcaino Gisela Carina](https://avatars.githubusercontent.com/u/111472242?s=64&v=4) |  3ª semana  |  | Python-Java-JavaScript-Node |   -  |
@@ -86,4 +87,11 @@ Para los demas integrantes:
 |    | 11ª semana |  |  |  |
 |    | 12ª semana |  |  |  |
 |    | 13ª semana |  |  |  |
+=======
+| Matias Peña | Semana 1 | Sistema Estudiantes | Java | - |
+| Lucas Vizcaino | 2da semana |  |  -  |
+|   Gisela Vizcaino  |  3ra semana  |  |  |   -  |
+|   Paola Ruiz |  4ta semana |  |  |   -  |
+|   -  |  -  |  |  |   -  |
+>>>>>>> 721cd34 (Update README.md)
 
