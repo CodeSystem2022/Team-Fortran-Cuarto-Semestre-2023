@@ -81,7 +81,7 @@ Para los demas integrantes:
 | [Vizcaino Lucas Ezequiel](https://avatars.githubusercontent.com/u/112833803?s=64&v=4) | 2ª semana |  | Python |  -  |
 | [Vizcaino Gisela Carina](https://avatars.githubusercontent.com/u/111472242?s=64&v=4) |  3ª semana  |  | Python-Java-JavaScript-Node |   -  |
 | [Ruiz Paola Del Valle](https://github.com/pao2134) |  4ª y 5ª semana |   |  Python-Java-JavaScript-Node |   -  |
-| [Morales Castro Danisa](https://github.com/danisa-morales) | |   |   |   |
+| [Morales Castro Danisa](https://github.com/danisa-morales) | 6ª semana |   |   |   |
 |    | 7ª semana |  |  |  |
 |    | 8ª semana |  |  |  |
 |    | 9ª semana |  |  |  |
