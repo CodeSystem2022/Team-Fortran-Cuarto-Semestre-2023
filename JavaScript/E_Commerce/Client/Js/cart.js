@@ -25,6 +25,7 @@ const displayCart = () => {
     modalContainer.append(modalHeader);
 
     //MODAL BODY   
+    if(cart.length > 0) {
     cart.forEach((product)=> {
         const modalBody = document.createElement("div");
         modalBody.className = "modal-body"
@@ -76,7 +77,13 @@ const displayCart = () => {
     <div class="total-price">Total : ${total}</div>
 
     `;
-    modalContainer.append(modalFooter);
+        modalContainer.append(modalFooter);
+    } else {
+        const modalText = document.createElement("h2");
+        modalText.className = "model-body";
+        modalText.innerText = "your cart is empty"
+        modalContainer.append(modalText);
+}
 };
 
 cartBtn.addEventListener("click", displayCart);
