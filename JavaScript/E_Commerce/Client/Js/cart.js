@@ -2,12 +2,10 @@
 const modalContainer = document.getElementById("modal-container");
 const modalOverlay = document.getElementById("modal-overlay");
 //const cart = [];
-const cartBtn = document.getElementById("cart-btn");
-<<<<<<< HEAD
+const cartBtn = document.getElementById("cart-btn"); 
 const cartCounter = document.getElementById("cart-counter");
-=======
 
->>>>>>> 6dff6dc (Agregamos semana 01-02-03 de JavaScript)
+
 const displayCart = () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "block";
@@ -29,10 +27,10 @@ const displayCart = () => {
     modalContainer.append(modalHeader);
 
     //MODAL BODY   
-<<<<<<< HEAD
+
     if(cart.length > 0) {
-=======
->>>>>>> 6dff6dc (Agregamos semana 01-02-03 de JavaScript)
+
+
     cart.forEach((product)=> {
         const modalBody = document.createElement("div");
         modalBody.className = "modal-body"
@@ -150,7 +148,7 @@ function createCheckoutButton(preferenceId) {
   };
   window.checkoutButton = renderComponent(bricksBuilder);
    } 
-else {
+ {
     const modalText = document.createElement("h2");
     modalText.className = "modal-body";
     modalText.textContent = "Your cart is empty";
@@ -160,21 +158,20 @@ else {
   
   
   
-=======
 
     `;
     modalContainer.append(modalFooter);
 };
 
 cartBtn.addEventListener("click", displayCart);
->>>>>>> 6dff6dc (Agregamos semana 01-02-03 de JavaScript)
+(Agregamos semana 01-02-03 de JavaScript)
 
 const deleteCartProduct = (id) => {
     const foundId = cart.findIndex((element)=> element.id === id);
     //console.log(foundId);
     cart.splice(foundId, 1);
     displayCart();
-<<<<<<< HEAD
+
 };
 
 const displayCartCounter=()=> {
@@ -186,6 +183,3 @@ const displayCartCounter=()=> {
         cartCounter.style.display="none"
     );
     }
-=======
-};
->>>>>>> 6dff6dc (Agregamos semana 01-02-03 de JavaScript)
