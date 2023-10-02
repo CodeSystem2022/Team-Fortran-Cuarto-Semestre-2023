@@ -142,7 +142,7 @@ function createCheckoutButton(preferenceId) {
   };
   window.checkoutButton = renderComponent(bricksBuilder);
    } 
-    else {
+else {
     const modalText = document.createElement("h2");
     modalText.className = "modal-body";
     modalText.textContent = "Your cart is empty";
