@@ -80,7 +80,6 @@ const displayCart = () => {
     modalFooter.className = "modal-footer"
     modalFooter.innerHTML = `
     <div class="total-price">Total : ${total}</div>
-<<<<<<< HEAD
     <button class="btn-primary" id="checkout-btn"> go to checkout</button>
     <div id="button-checkout"></div>
     `;
@@ -159,27 +158,4 @@ function createCheckoutButton(preferenceId) {
   
   
 
-    `;
-    modalContainer.append(modalFooter);
-};
-
-cartBtn.addEventListener("click", displayCart);
-(Agregamos semana 01-02-03 de JavaScript)
-
-const deleteCartProduct = (id) => {
-    const foundId = cart.findIndex((element)=> element.id === id);
-    //console.log(foundId);
-    cart.splice(foundId, 1);
-    displayCart();
-
-};
-
-const displayCartCounter=()=> {
-    const cartLength = cart.reduce((acc, el) => acc + el.price * el.quanty, 0);
-    if(cartLength > 0){
-        cartCounter.style= "block";
-        cartCounter.innerText= cartLength;
-    }else(
-        cartCounter.style.display="none"
-    );
-    }
+  
