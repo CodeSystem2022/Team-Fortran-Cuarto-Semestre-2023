@@ -76,6 +76,7 @@ Para los demas integrantes:
 |:---:|:---:|:---:|:---:|:---:|
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 | [Peña Matías Nicolas](https://avatars.githubusercontent.com/u/112669826?s=64&v=4) | 1ª semana | Sistema Estudiantes | Java | - |
 | [Vizcaino Lucas Ezequiel](https://avatars.githubusercontent.com/u/112833803?s=64&v=4) | 2ª semana |  | Python |  -  |
 | [Vizcaino Gisela Carina](https://avatars.githubusercontent.com/u/111472242?s=64&v=4) |  3ª semana  |  | Python-Java-JavaScript-Node |   -  |
@@ -101,6 +102,12 @@ Para los demas integrantes:
 |   Gisela Vizcaino  |  3ra semana  |  | Python-Java-JavaScript-Node |   -  |
 |   Paola Ruiz |  4ta semana |  |  |   -  |
 |   -  |  -  |  |  |   -  |
+=======
+| [Peña Matías Nicolas](https://avatars.githubusercontent.com/u/112669826?s=64&v=4) | 1ra semana | Sistema Estudiantes | Java | - |
+| [Vizcaino Lucas Ezequiel](https://avatars.githubusercontent.com/u/112833803?s=64&v=4) | 2da semana |  | Python |  -  |
+| [Vizcaino Gisela Carina](https://avatars.githubusercontent.com/u/111472242?s=64&v=4) |  3ra semana  |  | Python-Java-JavaScript-Node |   -  |
+| [Ruiz Paola Del Valle](https://github.com/pao2134) |  4ta y 5ta semana |  |  |   -  |
+>>>>>>> d0f3d4c (Update README.md)
 | [Morales Castro Danisa](https://github.com/danisa-morales) | 6ta semana |  |  |  |
 
 >>>>>>> 699bacb (Update README.md)
