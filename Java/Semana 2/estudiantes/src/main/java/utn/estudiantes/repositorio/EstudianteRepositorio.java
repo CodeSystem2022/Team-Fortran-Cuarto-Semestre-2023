@@ -1,6 +1,6 @@
 package utn.estudiantes.repositorio;
 
-import utn.estudiantes.modelo.Estudiante;
+import utn.estudiantes.modelo.Estudiante2022;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 import org.springframework.data.domain.Example;
@@ -11,6 +11,6 @@ import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.repository.query.QueryByExampleExecutor;
 
 
-public interface EstudianteRepositorio extends JpaRepository<Estudiante, Integer>{
+public interface EstudianteRepositorio extends JpaRepository<Estudiante2022, Integer>{
 
 }
