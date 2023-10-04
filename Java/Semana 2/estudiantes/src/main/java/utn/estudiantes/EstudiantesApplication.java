@@ -38,7 +38,7 @@ public class EstudiantesApplication {
 <<<<<<< HEAD
 	@Override
 	public void run(String... args) throws Exception {
-		logger.info("Ejecutamos el metodo run de Sping...");
+		logger.info(nl+"Ejecutamos el metodo run de Sping..."+nl);
 	}
 =======
 >>>>>>> 9606a8b (Cambios a Java Avanzado.-)
