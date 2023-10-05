@@ -85,7 +85,7 @@ const displayCart = () => {
     `;
     modalContainer.append(modalFooter);
     //mercado pago
-    const mercadopago = newMercadoPago("public_key",{
+    const mercadopago = newMercadoPago("TEST-39a1a8c9-2083-44c4-885f-45111eaec3bf",{
         locale: "es-AR",
     });
     const checkoutBtn = document.querySelector("#checkout-btn");
