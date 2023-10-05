@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # help(str.split)
-
+#Segmento de MatiasNicolas
 
 cursos = 'Java JavaScript Node Python Diseño'
 lista_cursos = cursos.split()
@@ -14,6 +14,7 @@ print(len(lista_cursos))
 
 =======
 help(str.split)
+#Segmento de Gaston Morales
 
 cursos = 'Java JavaScript Node Python Diseno'
 lista_cursos = cursos.split()
