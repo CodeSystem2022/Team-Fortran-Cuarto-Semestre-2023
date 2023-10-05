@@ -1,6 +1,5 @@
 package utn.estudiantes;
 
-<<<<<<< HEAD
 
 
 import org.slf4j.Logger;
@@ -9,24 +8,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import utn.estudiantes.modelo.Estudiantes2022;
 import utn.estudiantes.servicio.EstudianteServicio;
 
+import java.util.List;
+import java.util.Scanner;
 
 @SpringBootApplication
 public class EstudiantesApplication implements CommandLineRunner {
 
 	@Autowired
 	private EstudianteServicio estudianteServicio;
-	private static Logger logger = LoggerFactory.getLogger(EstudiantesApplication.class);
+	private static final Logger logger = LoggerFactory.getLogger(EstudiantesApplication.class);
 
 	String nl = System.lineSeparator();
-=======
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class EstudiantesApplication {
->>>>>>> 9606a8b (Cambios a Java Avanzado.-)
 
 	public static void main(String[] args) {
 		logger.info("Iniciando la aplicacion...");
@@ -35,11 +30,8 @@ public class EstudiantesApplication {
 		logger.info("Aplicacion Finalizada!");
 	}
 
-<<<<<<< HEAD
 	@Override
 	public void run(String... args) throws Exception {
-		logger.info(nl+"Ejecutamos el metodo run de Sping..."+nl);
+		logger.info(nl + "Ejecutamos el metodo run de Sping..." + nl);
 	}
-=======
->>>>>>> 9606a8b (Cambios a Java Avanzado.-)
 }
