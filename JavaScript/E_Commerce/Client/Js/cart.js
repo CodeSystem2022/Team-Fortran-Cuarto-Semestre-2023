@@ -2,8 +2,10 @@
 const modalContainer = document.getElementById("modal-container");
 const modalOverlay = document.getElementById("modal-overlay");
 //const cart = [];
-const cartBtn = document.getElementById("cart-btn");
+const cartBtn = document.getElementById("cart-btn"); 
 const cartCounter = document.getElementById("cart-counter");
+
+
 const displayCart = () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "block";
@@ -25,7 +27,10 @@ const displayCart = () => {
     modalContainer.append(modalHeader);
 
     //MODAL BODY   
+
     if(cart.length > 0) {
+
+
     cart.forEach((product)=> {
         const modalBody = document.createElement("div");
         modalBody.className = "modal-body"
@@ -80,7 +85,7 @@ const displayCart = () => {
     `;
     modalContainer.append(modalFooter);
     //mercado pago
-    const mercadopago = newMercadoPago("public_key",{
+    const mercadopago = newMercadoPago("TEST-39a1a8c9-2083-44c4-885f-45111eaec3bf",{
         locale: "es-AR",
     });
     const checkoutBtn = document.querySelector("#checkout-btn");
@@ -92,22 +97,65 @@ const displayCart = () => {
 }
 };
 
-cartBtn.addEventListener("click", displayCart);
+cartBtn.addEventListener("click" , function() {
+    checkoutButton.remove();
+    const orderData = {
+      quantity: 1,
+      description: "compra de ecommerce",
+      price: total,
+    };
+  });
+  
+ fetch("htpp://localhost:8080/create_preference" ,{
+    method: "POST" ,
+    headers: {
+        "Content-Type":"application/json",
+    },
+    body: JSON.stringify(orderData),
+ })
+  .then(function (response) {
+    return response.json();
+})
+.then(function (preference) {
+    createCheckoutButton(preference.id);
 
-const deleteCartProduct = (id) => {
-    const foundId = cart.findIndex((element)=> element.id === id);
-    //console.log(foundId);
-    cart.splice(foundId, 1);
-    displayCart();
-};
+})
+.catch(function () {
+    alert("Unexpected error");
+});
 
-const displayCartCounter=()=>{
-    const cartLength = cart.reduce((acc, el) => acc + el.price * el.quanty, 0);
-    if(cartLength > 0){
-        cartCounter.style= "block";
-        cartCounter.innerText= cartLength;
-    }else(
-        cartCounter.style.display="none"
-    )
+function createCheckoutButton(preferenceId) {
+    // Initialize checkout
+  const bricksBuilder = mercadopago.bricks();
 
-}
+  const renderComponent = async (bricksBuilder) => {
+     //if (window.checkoutButton) checkoutButton.unmount();
+
+ await bricksBuilder.create(
+    "wallet",
+    "button-checkout", //class/id where the payment button will be displayed
+    {
+        initialization:  {
+            preferenceId: preferenceId,
+        },
+        callbacks:
+        {
+            onError: (error) => console.error(error),
+            onReady: () => {},
+        },    }
+ );
+  };
+  window.checkoutButton = renderComponent(bricksBuilder);
+   } 
+ {
+    const modalText = document.createElement("h2");
+    modalText.className = "modal-body";
+    modalText.textContent = "Your cart is empty";
+    modalContainer.appendChild(modalText);
+    }
+  
+  
+  
+  
+
+  
