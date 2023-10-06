@@ -3,5 +3,5 @@ import morgan from "morgan";
 
 const app = express();
 app.use(morgan("dev"))
-app.get("/",(req,res)=>res.json({message: "Bienvenido a mi proyecto"}))
+app.get("/",(req,res)=>res.json({message: "Bienvenido a mi proyectos"}))
 export default app;
