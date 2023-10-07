@@ -37,12 +37,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 	 <dependency>
 	  <groupId>org.springframework</groupId>
 	  <artifactId>spring-context</artifactId>
 	  <version>6.0.11</version>
 	  <type>jar</type>
 	 </dependency>
+=======
+>>>>>>> 9606a8b (Cambios a Java Avanzado.-)
 	</dependencies>
 
 	<build>
