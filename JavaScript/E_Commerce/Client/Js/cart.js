@@ -77,8 +77,78 @@ const displayCart = () => {
     const total = cart.reduce((acc, el) => acc + el.price * el.quanty, 0);
 
     const modalFooter = document.createElement("div");
-    modalFooter.className = "modal-footer"
+    modalFooter.className = "modal-footer";
     modalFooter.innerHTML = `
+    <div class = "total-price">Total: ${total}</div>
+    <button class = "btn-primary" id="checkout-btn"> go to checkout</button> 
+    <div id="button-checkout"></div>
+    `; 
+
+    modalContainer.append(modalFooter);
+
+  //mp;
+  const mercadopago = new MercadoPago("public_key", {
+    locale: "es-AR", // The most common are: 'pt-BR', 'es-AR' and 'en-US'   
+});
+const checkoutButton = modalFooter.querySelector("#checkout-btn"); 
+
+checkoutButton.addEventListener("click", function (){
+
+    checkoutButton.remove(); 
+    const orderData = {
+        quantity: 1,    
+        description: "compra de ecomerce",
+        price: total,
+    };
+
+    fetch("http://localhost:8080/create_preference", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(orderData),
+    })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (preference) {
+            createCheckoutButton(preference.id);
+        })
+        .catch(function () {
+            alert("Unexpected error"); 
+        });
+});
+
+function createCheckoutButton(preferenceId) {
+    //Initialize the checkout
+    const bricksBuilder = mercadopago.bricks();
+
+    const renderComponent = async (bricksBuilder) => {
+        //if (window.checkoutButton) checkoutButton.unmount();
+
+        await bricksBuilder.create(
+            "wallet",
+            "button-checkout", // class/id where the payment button will be displayed
+            {
+                initialization: {
+                    preferenceId: preferenceId,
+                },
+                callbacks: {
+                    onError: (error) => console.error(error),
+                    onReady: () => {},
+                },
+            }
+        );
+
+    };
+    window.checkoutButton = renderComponent(bricksBuilder);
+}       
+}else{
+const modalText = document.createElement("h2");
+modalText.className = "modal-body";
+modalText.innerText = "your cart is empty";
+modalContainer.append(modalText);
+}    
     <div class="total-price">Total : ${total}</div>
     <button class="btn-primary" id="checkout-btn"> go to checkout</button>
     <div id="button-checkout"></div>
