@@ -144,6 +144,22 @@ modalText.className = "modal-body";
 modalText.innerText = "your cart is empty";
 modalContainer.append(modalText);
 }    
+    <div class="total-price">Total : ${total}</div>
+    <button class="btn-primary" id="checkout-btn"> go to checkout</button>
+    <div id="button-checkout"></div>
+    `;
+    modalContainer.append(modalFooter);
+    //mercado pago
+    const mercadopago = newMercadoPago("public_key",{
+        locale: "es-AR",
+    });
+    const checkoutBtn = document.querySelector("#checkout-btn");
+    } else {
+        const modalText = document.createElement("h2");
+        modalText.className = "model-body";
+        modalText.innerText = "your cart is empty"
+        modalContainer.append(modalText);
+}
 };
 
 cartBtn.addEventListener("click", displayCart);
