@@ -1,7 +1,25 @@
-import express from "express"
-import morgan from "morgan";
-
+import  Express  from "express";
+import  Morgan  from "morgan";
+import TareasRouter from "./router/tareas.routers.js";
+import authRouter from "./router/auth.router.js"
 const app = express();
-app.use(morgan("dev"))
-app.get("/",(req,res)=>res.json({message: "Bienvenido a mi proyecto"}))
+// Middlewares
+app.use(morgan("dev"));
+app.use(express.json());
+app.use(express.urlencoded({extended:false}))
+
+
+app.get("/",(req,res)=>res.json({message:"Bienvenidos a mi primer proyecto"}));
+app.use('/api',TareasRouter);
+app.use('/api',authRouter);
+//Manejo de Errores
+app.use((err,req,res,next)=>{
+    res.status(500).json({
+        status:'error',
+        message:err.message
+
+
+    });
+});
 export default app;
+    
