@@ -2,9 +2,12 @@ import  Express  from "express";
 import  Morgan  from "morgan";
 import TareasRouter from "./router/tareas.routers.js";
 import authRouter from "./router/auth.router.js"
+import cookieParser from "cookie-parser";
+
 const app = express();
 // Middlewares
 app.use(morgan("dev"));
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 
