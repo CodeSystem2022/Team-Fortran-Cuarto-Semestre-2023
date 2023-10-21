@@ -32,8 +32,8 @@ export const crearTarea = async (req, res) => {
         message: "Ya existe una tarea con ese titulo",
       });
     }
-    console.log(error);
-    next(error);
+    console.error(error); // Cambiado a console.error
+    // No es necesario 'next' aquí
   }
 };
 
