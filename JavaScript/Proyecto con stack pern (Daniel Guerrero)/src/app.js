@@ -13,8 +13,8 @@ app.use(express.urlencoded({extended:false}))
 
 
 app.get("/",(req,res)=>res.json({message:"Bienvenidos a mi primer proyecto"}));
-app.use('/api',TareasRouter);
-app.use('/api',authRouter);
+app.use('/api/tareas',TareasRouter);
+app.use('/api/auth',authRouter);
 //Manejo de Errores
 app.use((err,req,res,next)=>{
     res.status(500).json({

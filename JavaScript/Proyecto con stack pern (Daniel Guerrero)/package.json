@@ -117,6 +117,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "eslint": "^8.51.0",
     "nodemon": "^3.0.1"
