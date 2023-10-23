@@ -2,6 +2,7 @@
 # help(str.split)
 #Segmento de MatiasNicolas
 
+
 cursos = 'Java JavaScript Node Python Diseño'
 lista_cursos = cursos.split()
 print(f'Lista de cursos: {lista_cursos}')
@@ -25,3 +26,4 @@ print(f'Lista de cursos: {lista_cursos}')
 print(len(lista_cursos))
 #Codigo terminado
 """
+
