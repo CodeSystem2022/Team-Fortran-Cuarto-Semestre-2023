@@ -18,6 +18,7 @@ public class TiendaLibrosApplication {
 		//Ejecutamos el codigo para cargar el formulario
 		EventQueue.invokeLater(() ->{ //Metodo Lambda
 			//Obtenemos el objeto from a traves del spring
+			//segmento de codigo matias nicolas peña
 			LibroFrom libroFrom = contextoSpring.getBean(LibroFrom.class);
             libroFrom.setVisible(true);   
 		}); 	   
