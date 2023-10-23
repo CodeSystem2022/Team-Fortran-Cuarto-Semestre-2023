@@ -1,4 +1,4 @@
-
+""""
 # help(str.split)
 #Segmento de MatiasNicolas
 
@@ -24,3 +24,4 @@ lista_cursos = cursos_separados_coma.split(",",2)
 print(f'Lista de cursos: {lista_cursos}')
 print(len(lista_cursos))
 #Codigo terminado
+"""

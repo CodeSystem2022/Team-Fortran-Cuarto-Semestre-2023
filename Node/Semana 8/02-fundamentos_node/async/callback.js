@@ -1,5 +1,6 @@
+
 function soyAsincrona(miCallback){
-    setTimeout(function () {
+    setTimeout(function() {
         console.log('Hola soy una funcion asincrona');
         miCallback();
     }, 1000);
