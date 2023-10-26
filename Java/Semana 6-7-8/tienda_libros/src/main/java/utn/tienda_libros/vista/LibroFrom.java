@@ -28,23 +28,23 @@ public class LibroFrom extends JFrame {
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-<<<<<<< HEAD
+<<<<<<<HEAD
         setSize(900, 700);
 =======
-        setSize(900,700);
-        
-         //Para obtenner las dimenciones de las ventana
-        Toolkit toolkit= Toolkit.getDefaultToolkit();
+        setSize(900, 700);
+
+        //Para obtenner las dimenciones de las ventana
+        Toolkit toolkit = Toolkit.getDefaultToolkit();
         Dimension tamanioPantalla = toolkit.getScreenSize();
-        int x =(tamanioPantalla.width -getWidth()/2);
-        int y =(tamanioPantalla.height -getHeight()/2);
+        int x = (tamanioPantalla.width - getWidth() / 2);
+        int y = (tamanioPantalla.height - getHeight() / 2);
         setLocation(x, y);
->>>>>>> main
+>>>>>>>main
     }
 
     private void createUIComponents() {
         this.TablaModeloLiibros = new DefaultTableModel(0, 5);
-        String [] cabecera = {"id", "Libro", "Autor", "Precio", "Existencia"};
+        String[] cabecera = {"id", "Libro", "Autor", "Precio", "Existencia"};
         this.TablaModeloLiibros.setColumnIdentifiers(cabecera);
         //Instanciar el objeto JTable
         this.TablaModeloLiibros = new JTable(TablaModeloLiibros);
@@ -59,10 +59,17 @@ public class LibroFrom extends JFrame {
         //Iteramos cada libro
         libros.forEach((libro) -> { //FuncionLambda
             //Creamos cada registro para agregarlos a la tabla
-            Object[] renglonLibro ={
-                    
+            Object[] renglonLibro = {
+                    libro.getidLibro(),
+                    libro.getNombreLibro(),
+                    libro.getAutor(),
+                    libro.getPrecio(),
+                    libro.getExistencias(),
             }
-
+            this.TablaModeloLibros.addRow(renglonLibro);
 
         });
+
+    }
+}
 
