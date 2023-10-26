@@ -45,8 +45,7 @@ public class LibroFrom extends JFrame {
         libros.forEach((libro) -> { //FuncionLambda
             //Creamos cada registro para agregarlos a la tabla
             Object[] renglonLibro ={
-                    libro.getClass()
-                    libro.
+                    
             }
 
 
