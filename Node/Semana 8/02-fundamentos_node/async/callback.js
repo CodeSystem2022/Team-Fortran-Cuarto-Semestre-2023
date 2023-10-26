@@ -1,14 +1,13 @@
 
 function hola(nombre, miCallback){
-    setTimeout( function() {
-        console.log('Hola '+nombre);
+    setTimeout(function() {
+        console.log('Hola ' + nombre);
         miCallback();
-    }, 1000);   
+    }, 1000);
 }
 
-
 function adios(nombre, otroCallback) {
-    setTimeout( function () {
+    setTimeout(function() {
         console.log('Adios', nombre);
         otroCallback();
     }, 1000);
