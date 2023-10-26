@@ -33,10 +33,9 @@ public class LibroFrom extends JFrame {
                 this.TablaModeloLiibros.setColumnIdentifiers(cabecera);
                 //Instanciar el objeto JTable
         this.TablaModeloLiibros = new  JTable(TablaModeloLiibros);
-        listarLibros();
-
+       listarLibros();
     }
-    private class listarLibros(){
+    private class listarLibros (){
         //Limpiar la tabla
         TablaModeloLiibros.setRowCount(0);
         //Obtener los libros de la BD
@@ -50,10 +49,9 @@ public class LibroFrom extends JFrame {
                     libro.getPrecio(),
                     libro.getExistencias(),
             }
-    this.TablaModeloLibros.addRow(renglonLibro);
+            this.TablaModeloLibros.addRow(renglonLibro);
 
         });
 
 
-    }
 }
