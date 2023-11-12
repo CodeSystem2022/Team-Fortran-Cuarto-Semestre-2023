@@ -1,22 +1,19 @@
 import { pool } from "../db.js";
 
-export const listarTareas = async (req, res) => {
-  console.log(req.usuarioId);
+export const listarTareas = async (req, res, next) => {
   const resultado = await pool.query("SELECT * FROM tareas WHERE usuario_id = $1",[req.usuarioId]);
   return res.json(resultado.rows);
 };
 
 export const listarTarea = async (req, res) => {
-  const resultado = await pool.query("SELECT * FROM tareas WHERE id = $1", [
-    req.params.id,
-  ]);
+  const resultado = await pool.query("SELECT * FROM tareas WHERE id = $1", [req.params.id]);
   if (resultado.rowCount === 0) {
     return res.status(404).json({ message: "La tarea no existe" });
   }
   return res.json(resultado.rows[0]);
 };
 
-export const crearTarea = async (req, res) => {
+export const crearTarea = async (req, res, next) => {
   const { titulo, descripcion } = req.body;
 
   try {
@@ -32,8 +29,8 @@ export const crearTarea = async (req, res) => {
         message: "Ya existe una tarea con ese titulo",
       });
     }
-    console.error(error); // Cambiado a console.error
-    // No es necesario 'next' aquí
+    console.log(error);
+    next(error);
   }
 };
 

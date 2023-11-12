@@ -1,11 +1,14 @@
 CREATE TABLE tareas (
-    id SERIAL PRIMARY KFY,
+    id SERIAL PRIMARY KEY,
     titulo VARCHAR(255) UNIQUE NOT NULL, 
     descripcion TEXT, 
     
 );
 
 ALTER TABLE tareas ADD COLUMN usuario_id INTEGER REFERENCES usuarios(id);
+
+--remove unique from titulo
+ALTER TABLE tareas DROP CONSTRAINT tareas_titulo_key;
 
 
 CREATE TABLE usuarios(
