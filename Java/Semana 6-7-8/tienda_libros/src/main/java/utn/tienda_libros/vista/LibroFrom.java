@@ -12,18 +12,21 @@ import javax.swing.table.DefaultTableModel;
 @Componet
 >>>>>>> main
 public class LibroFrom extends JFrame {
-
     LibroServicio libroServicio;
     private JPanel panel;
     private JTable tablaLibros;
-    private DefaultTableModel TablaModeloLiibros;
+    private JTextField libroTexto;
+    private JTextField autorTexto;
+    private JTextField precioTexto;
+    private JTextField existenciasTexto;
+    private DefaultTableModel tablaModeloLiibros;
 
     @Autowired
-    public LibroFrom(LibroServicio libroServicio) {
+    public LibroFrom(LibroServicio libroServicio){
         this.libroServicio = libroServicio;
         iniciarForma();
+        agregarButton.addActionListener(e -> agregarLibro());
     }
-
     private void iniciarForma() {
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -43,17 +46,17 @@ public class LibroFrom extends JFrame {
     }
 
     private void createUIComponents() {
-        this.TablaModeloLiibros = new DefaultTableModel(0, 5);
+        this.tablaModeloLibros = new DefaultTableModel(0, 5);
         String[] cabecera = {"id", "Libro", "Autor", "Precio", "Existencia"};
-        this.TablaModeloLiibros.setColumnIdentifiers(cabecera);
+        this.tablaModeloLiibros.setColumnIdentifiers(cabecera);
         //Instanciar el objeto JTable
-        this.TablaModeloLiibros = new JTable(TablaModeloLiibros);
+        this.tablaModeloLibros = new JTable(tablaModeloLiibros);
         listarLibros();
     }
 
     private void listarLibros() {
         //Limpiar la tabla
-        TablaModeloLiibros.setRowCount(0);
+        tablaModeloLibros.setRowCount(0);
         //Obtener los libros de la BD
         var libros = libroServicio.listarLibros();
         //Iteramos cada libro
@@ -66,7 +69,7 @@ public class LibroFrom extends JFrame {
                     libro.getPrecio(),
                     libro.getExistencias(),
             }
-            this.TablaModeloLibros.addRow(renglonLibro);
+            this.tablaModeloLibros.addRow(renglonLibro);
 
         });
 
