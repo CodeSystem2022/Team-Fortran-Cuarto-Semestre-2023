@@ -83,7 +83,7 @@ Para los demas integrantes:
 | [Pereyra Facundo Ezequiel](https://github.com/facundoPereyra07) | 8ª semana | Python-Java-JavaScript-Node | - |
 | [Vizcaino Lucas Ezequiel](https://avatars.githubusercontent.com/u/112833803?s=64&v=4) | 9ª semana | Python-Java-JavaScript-Node |  |
 | [Vizcaino Gisela Carina](https://avatars.githubusercontent.com/u/111472242?s=64&v=4)  | 10ª semana | Python-Java-JavaScript-Node |  |
-| [Ruiz Paola Del Valle](https://github.com/pao2134) | 11ª semana | Python-Java-JavaScript-Node |  |
+| [Hidalgo Gabriel](https://github.com/HidoGG)| 11ª semana | Python-Java-JavaScript-Node |  |
 | [Morales Castro Danisa](https://github.com/danisa-morales) | 12ª semana | Python-Java-JavaScript-Node |  |
 | [Calisaya Fernando Daniel](https://github.com/califerdan) | 13ª semana | Python-Java-JavaScript-Node |  |
 
