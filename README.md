@@ -72,19 +72,19 @@ Para los demas integrantes:
 - Enviar los cambios, generando una PR desde su rama a main.
 
 
-| Nombre | Semana de Scrum Master(Projecto) | Proyecto(Wiki) | Lenguaje de programación | Observación |
-|:---:|:---:|:---:|:---:|:---:|
-| [Peña Matías Nicolas](https://avatars.githubusercontent.com/u/112669826?s=64&v=4) | 1ª semana | Sistema Estudiantes | Java | - |
-| [Vizcaino Lucas Ezequiel](https://avatars.githubusercontent.com/u/112833803?s=64&v=4) | 2ª semana |  | Python |  -  |
-| [Vizcaino Gisela Carina](https://avatars.githubusercontent.com/u/111472242?s=64&v=4) |  3ª semana  |  | Python-Java-JavaScript-Node |   -  |
-| [Ruiz Paola Del Valle](https://github.com/pao2134) |  4ª y 5ª semana |   |  Python-Java-JavaScript-Node |   -  |
-| [Morales Castro Danisa](https://github.com/danisa-morales) | 6ª semana |   | Python-Java-JavaScript-Node |   |
-| [Calisaya Fernando Daniel](https://github.com/califerdan)  | 7ª semana |  | Python-Java-JavaScript-Node |  |
-|    | 8ª semana |  |  |  |
-|    | 9ª semana |  |  |  |
-|    | 10ª semana |  |  |  |
-|    | 11ª semana |  |  |  |
-|    | 12ª semana |  |  |  |
-|    | 13ª semana |  |  |  |
+| Nombre | Semana de Scrum Master(Projecto) | Lenguaje de programación | Observación |
+|:---:|:---:|:---:|:---:|
+| [Peña Matías Nicolas](https://avatars.githubusercontent.com/u/112669826?s=64&v=4) | 1ª semana | Java | - |
+| [Vizcaino Lucas Ezequiel](https://avatars.githubusercontent.com/u/112833803?s=64&v=4) | 2ª semana | Python | - |
+| [Vizcaino Gisela Carina](https://avatars.githubusercontent.com/u/111472242?s=64&v=4) |  3ª semana  | Python-Java-JavaScript-Node | - |
+| [Ruiz Paola Del Valle](https://github.com/pao2134) | 4ª y 5ª semana | Python-Java-JavaScript-Node | - |
+| [Morales Castro Danisa](https://github.com/danisa-morales) | 6ª semana | Python-Java-JavaScript-Node | - |
+| [Calisaya Fernando Daniel](https://github.com/califerdan) | 7ª semana | Python-Java-JavaScript-Node | - |
+| [Pereyra Facundo Ezequiel](https://github.com/facundoPereyra07) | 8ª semana | Python-Java-JavaScript-Node | - |
+| [Vizcaino Lucas Ezequiel](https://avatars.githubusercontent.com/u/112833803?s=64&v=4) | 9ª semana | Python-Java-JavaScript-Node |  |
+| [Vizcaino Gisela Carina](https://avatars.githubusercontent.com/u/111472242?s=64&v=4)  | 10ª semana | Python-Java-JavaScript-Node |  |
+| [Ruiz Paola Del Valle](https://github.com/pao2134) | 11ª semana | Python-Java-JavaScript-Node |  |
+| [Morales Castro Danisa](https://github.com/danisa-morales) | 12ª semana | Python-Java-JavaScript-Node |  |
+| [Calisaya Fernando Daniel](https://github.com/califerdan) | 13ª semana | Python-Java-JavaScript-Node |  |
 
 
