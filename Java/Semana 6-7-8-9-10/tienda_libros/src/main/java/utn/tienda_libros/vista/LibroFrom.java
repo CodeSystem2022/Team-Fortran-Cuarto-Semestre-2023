@@ -4,13 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import utn.tienda_libros.servicio.LibroServicio;
 
 import javax.swing.*;
-<<<<<<< HEAD
 import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.DefaultTableModel;
+import java.awt.*;
 
-=======
 @Componet
->>>>>>> main
 public class LibroFrom extends JFrame {
     LibroServicio libroServicio;
     private JPanel panel;
@@ -19,6 +17,9 @@ public class LibroFrom extends JFrame {
     private JTextField autorTexto;
     private JTextField precioTexto;
     private JTextField existenciasTexto;
+    private JButton agregarButton;
+    private JButton modificarButton;
+    private JButton eliminarButton;
     private DefaultTableModel tablaModeloLiibros;
 
     @Autowired
@@ -31,9 +32,6 @@ public class LibroFrom extends JFrame {
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-<<<<<<<HEAD
-        setSize(900, 700);
-=======
         setSize(900, 700);
 
         //Para obtenner las dimenciones de las ventana
@@ -42,7 +40,40 @@ public class LibroFrom extends JFrame {
         int x = (tamanioPantalla.width - getWidth() / 2);
         int y = (tamanioPantalla.height - getHeight() / 2);
         setLocation(x, y);
->>>>>>>main
+    }
+
+    private void agregarLIbro() {
+        //Leer los valores del formulario
+        if (libroTexto.getText().equals("")){
+            mostrarMensaje("Ingresa el nombre del libro");
+            libroTexto.requestFocusInWindow();
+            return;
+        }
+        var nombreLibro = libroTexto.getText();
+        var autor = autorTexto.getText();
+        var precio = Double.parseDouble(precioTexto.getText());
+        var existencias = Integer.parseInt(existenciasTexto.getText());
+        //Creamos el objeto libro
+        var libro = new Libro(null, nombreLibro, autor, precio, existencias);
+        //libro.setNombreLibro(nombreLibro);
+        //libro.setAutor(autor);
+        //libro.setPrecio(precio);
+        //libro.setExistencias(existencias);
+        this.libroServicio.guardarLibro(libro);
+        mostrarMensaje("Se agrego libro...");
+        limpiarFormulario();
+        listarLibros();
+    }
+
+    private void limpiarFormulario(){
+        libroTexto.setText("");
+        autorTexto.setText("");
+        precioTexto.setText("");
+        existenciasTexto.setText("");
+    }
+
+    private void mostrarMensaje(String mensaje){
+        JOptionPane.showMessageDialog(this, mensaje);
     }
 
     private void createUIComponents() {
@@ -70,9 +101,7 @@ public class LibroFrom extends JFrame {
                     libro.getExistencias(),
             }
             this.tablaModeloLibros.addRow(renglonLibro);
-
         });
-
     }
 }
 
