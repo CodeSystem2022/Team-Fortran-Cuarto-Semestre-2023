@@ -1,15 +1,24 @@
-import { useContext } from "react";
+import { useContext , useState} from "react";
 import { UserContext} from "../context/userProvider";
 import { useNavigate} from "react-router-dom";
 
 const Login = () => {
-    const { user, setUser} = useContext(UserContext);
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+
+    const { loginUser } = useContext(UserContext);
     const navigate = useNavigate();
 
-    const handlerClickLogin = () => {
-        setUser(true);
-        navigate("/");
-
+    const handleSubmit = async(e) => {
+        e.preventDefaultd();
+        try{
+            await loginUser(email, password);
+            console.log("Usuario logeado")
+            navigate("/");
+        }
+        catch(err){
+            console.log(err.code);
+        }
     };
 
     return (
