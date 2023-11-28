@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Home from "./routes/Home"; 
 
 import Login from "./routes/Login";
+import Register from "./routes/register";
+
 import RequireAuth from "./components/RequiereAuth"
 
 function App() {
@@ -23,9 +25,8 @@ function App() {
 
         />
 
-        <Route path="login" element={<Login/>}>
-
-        </Route>
+        <Route path="login" element={<Login/>}> </Route>
+        <Route path="register" element={<Register/>}> </Route>
 
       </Routes>
     </>
